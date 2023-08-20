@@ -1,0 +1,22 @@
+<MyGrid>
+
+    apiKey: apiKey
+
+    GridLayout:
+        cols:1
+        size: root.width -200, root.height -200
+        pos: 100, 100
+
+        GridLayout:
+            cols:1
+
+            Label:
+                text: "Введіть APi ключ нової пошти: "
+
+            TextInput:
+                id: apiKey
+                multiline: False
+
+        Button:
+            text: "Вигрузити в базу"
+            on_press: root.btn()
